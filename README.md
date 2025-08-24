@@ -1,5 +1,3 @@
-# co2-ppo-cma-human — DRL for GCS
-
 ## Purpose
 Learn injection policies for GCS with PPO. Compare to CMA-ES. Use a GRU or FNO surrogate.
 
@@ -19,9 +17,9 @@ Learn injection policies for GCS with PPO. Compare to CMA-ES. Use a GRU or FNO s
    ```
 
 ## Files and roles
-- `cluster_permeability_mds_kmeans.ipynb`: Clusters permeability fields. Picks medoids. Plots.  
-- `build_robust_feasibility_mask.ipynb`: Builds the feasibility mask. Screens boundary leakage. Saves NPY.  
-- `co2-ppo-cma-human.ipynb`: Overview of PPO and CMA-ES workflow.  
+- `cluster_permeability_mds_kmeans.ipynb`: Clusters permeability fields.  
+- `build_robust_feasibility_mask.ipynb`: Builds the feasibility mask. Screens boundary leakage.  
+- `co2-ppo-cma-human.ipynb`: Runs CMA-ES, PPO, and the human-configured baseline, and summarizes results on validation fields.  
 - `plot_train_eval_rewards.ipynb`: Plots training and evaluation curves from logs.  
 - `test_env_run.ipynb`: Smoke test for env and surrogate. Runs a short rollout.  
 - `cma_es_baseline_gcs.py`: Runs CMA-ES baseline and logs best genomes.  
